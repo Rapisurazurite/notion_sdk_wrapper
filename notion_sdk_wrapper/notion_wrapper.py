@@ -28,7 +28,6 @@ if __name__ == "__main__":
     notion_client = NotionClient(os.environ["NOTION_TOKEN"])
     draft_page = notion_client.retrieve_page("d0f6a4e6422d4dc89ff53de7de3e6c29")
     database = notion_client.retrieve_database("059a1599344841d09153c461ff8677fe")
-    # database = notion_client.retrieve_database("fbd9f29624c142cf9f44bdc86da250a1")
     contents = database.children(filters={})
     #
     # properties = {
